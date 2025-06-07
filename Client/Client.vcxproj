@@ -202,6 +202,7 @@
     <ClCompile Include="src\Utils\ThreadPool\ThreadPool.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="resource.h" />
     <ClInclude Include="src\Network\Core\DatabaseSchema.hpp" />
     <ClInclude Include="src\Network\PacketManager\Packets\AddDataPacket\AddDataPacket.hpp" />
     <ClInclude Include="src\Network\PacketManager\Packets\DeleteDataPacket\DeleteDataPacket.hpp" />
@@ -230,6 +231,12 @@
     <ClInclude Include="src\Utils\base64.hpp" />
     <ClInclude Include="src\Utils\Json.hpp" />
     <ClInclude Include="src\Utils\ThreadPool\ThreadPool.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

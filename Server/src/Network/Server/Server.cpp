@@ -163,7 +163,7 @@ void Server::initDatabase()
 
         m_db.exec("PRAGMA foreign_keys = ON;");        
 
-        m_db.exec(std::format(R"(INSERT INTO Users(email, password_hash, first_name, last_name, phone_number, role) VALUES
+        /*m_db.exec(std::format(R"(INSERT INTO Users(email, password_hash, first_name, last_name, phone_number, role) VALUES
             ('ivanov1@example.ru', '{0}', 'Иван', 'Иванов', '+79261234567', 'guest'),
             ('petrova2@example.ru', '{1}', 'Анна', 'Петрова', '+79031234568', 'admin'),
             ('sidorov3@example.ru', '{2}', 'Сидор', 'Сидоров', '+79876543210', 'guest'),
@@ -256,7 +256,7 @@ void Server::initDatabase()
             (18, 3, '2025-06-09', '2025-06-11', 'подтверждено'),
             (19, 1, '2025-07-01', '2025-07-03', 'завершено'),
             (20, 5, '2025-08-10', '2025-08-12', 'подтверждено');
-        )");
+        )");*/
 
     }
     catch (const SQLite::Exception& e) {
